@@ -1,63 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display&display=swap');
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+body {
+  background-color: lightblue;
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li a, .dropbtn {
-  float: left;
-  font-size: 16px;
-  display: block;
-  color: #888888;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.jumbotron {
+  /* background-color: white; */
+  margin-bottom: 0px;
 }
 
-ul.topnav li a:hover:not(.active), .dropdown:hover .dropbtn {
-	background-color: #e7e7e7;
+.jumbotron .display-4 {
+  font-family: "Playfair Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li.dropdown {
-  float: left;
-  overflow: hidden;
-  display: block;
+.jumbotron .lead {
+  font-family: "Nanum Gothic";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.navbar {
+  margin-top: 0px;
 }
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #e7e7e7;}
-
-.dropdown:hover .dropdown-content {
-  display: inline-block;
-}
-
-ul.topnav li a.active {background-color: #dddddd;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
+/*
+.container-fluid {
+  background-color: white;
+} */
