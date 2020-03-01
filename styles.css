@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Nanum+Gothic|Playfair+Display&display=swap');
 
 body {
-  background-color: lightblue;
+  background-color: white;
+}
+
+h2 {
+  font-family: "Playfair Display";
 }
 
 .jumbotron {
-  /* background-color: white; */
+  background-image: url(corn.jpg);
+  background-size: cover;
   margin-bottom: 0px;
+  /* color: white; */
 }
 
 .jumbotron .display-4 {
@@ -25,8 +31,20 @@ body {
 
 .navbar {
   margin-top: 0px;
+  font-family: "Nanum Gothic";
 }
+
+/* .navbar .active {
+  background-color: lightblue;
+} */
 /*
 .container-fluid {
   background-color: white;
 } */
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: 10px;
+}
