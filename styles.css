@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Nanum+Gothic|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind|Martel+Sans|Poppins&display=swap');
 
 /* Reset Styles */
 @import 'normalize.css';
@@ -13,150 +14,131 @@ html {
 
 /* Base Styles */
 body {
-  background-color: white;
-}
-
-h2 {
-  font-family: "Playfair Display";
-}
-
-.jumbotron {
-  background-image: url(images/corn.jpg);
-  background-size: cover;
-  margin-bottom: 0px;
-  /* color: white; */
-}
-
-.jumbotron .display-4 {
-  font-family: "Playfair Display", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.jumbotron .lead {
-  font-family: "Nanum Gothic", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar {
-  margin-top: 0px;
-  font-family: "Nanum Gothic";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin: 10px; */
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  position: relative;
-  display: inline-block;
+  line-height: 1.8;
+  text-align: center;
 }
 
 footer {
-  display: flex;
-  background-color: grey;
-  padding-top: 25px;
+ padding: 30px;
+ width: 100%;
+ margin: 0;
+}
+
+img {
+  width: 100%;
+  padding: 10px;
+}
+
+.jumbotron-heading {
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.jumbotron-subheading {
+  font-size: 16px;
+  font-family: Hind;
+  padding:0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+
+}
+
+i {
+  color:black;
+}
+
+h2 {
+  font-family: Hind;
+}
+
+.bg-1 { 
+  background-color: #7189bf; 
+  color: #ffffff;
+}
+.bg-2 { 
+  background-color: #df7599; 
+  color: #ffffff;
+}
+.bg-3 { 
+  background-color: #ffc785; 
+  color: #ffffff;
+}
+.bg-4 { 
+  background-color: #72d6c9; 
+  color: #ffffff;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.jumbotron .jumbotron-heading {
+  font-family: Poppins;
+}
+
+.container-fluid {
+  padding-top: 10px;
   padding-bottom: 25px;
 }
 
-.copyright, .mailto a {
+.navbar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0;
+  margin: 0;
+  font-family: Poppins;
+  border: 0;
+  letter-spacing: 3px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: block;
+}
+
+.footer-content a {
+  display: inline-block;
+}
+
+.footer-content::after {
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  ul.nav li {
+    display: inline;
+  }
+}
+
+ul.nav a {
   color: white;
-  font-size: 11px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+ul.nav a:hover {
+  background-color: #df7599;
+  transition: all 0.3s ease 0s;
 }
 
 .copyright {
-  justify-content: left;
-  align-items: left;
+  font-size: 12px;
 }
 
-.mailto a {
-  justify-content: right;
-  align-items: left;
-}
-
-/* Layout Styles */
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1170px;
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-[class*='col-'] {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media (min-width: 48em) {
-    [class*='col-'] {
-        float: left;
-    }
-
-    .col-1 {
-        width: 16.66%;
-        min-height: 1px;
-    }
-
-    .col-3 {
-        width: 25%;
-        min-height: 1px;
-    }
-
-    .col-4 {
-        width: 33.3333%;
-        min-height: 1px;
-    }
-    
-    .col-5 {
-      width: 41.66%;
-      min-height: 1px;
-    }
-
-    .col-6 {
-      width: 50%;
-      min-height: 1px;
-    }
-    .col-7 {
-      width: 58.33%;
-      min-height: 1px;
-    }
-    .col-8 {
-        width: 66.6666%;
-        min-height: 1px;
-    }
-
-    .col-9 {
-      width: 75%;
-      min-height: 1px;
-    }
-
-    .col-10 {
-      width: 83.33%;
-      min-height: 1px;
-    }
+.icon {
+  font-size: 2em;
+  padding: 5px;
 }
 
 @media (min-width: 48em) {
