@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
 .jumbotron {
-	margin-bottom:0;
-	height: 300px;
-	background-size: auto 100%;
+	background-color: #ffffff;
+	background: #ffffff;
+	font-family: "Playfair Display";
+	text-align:center;
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	margin-top: 23px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 10px;
+  z-index: 100;
 }
 
 .navbar{ 
@@ -28,6 +42,24 @@
 
 .navbar-toggler{  
 	background:#fff;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 200px;
+  background-image: url('%PUBLIC_URL%/images/header1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6em 0;
 }
 
 .header{
