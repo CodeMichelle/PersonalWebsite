@@ -16,16 +16,13 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
-	padding: 10px;
 	align: center;
   }
   
   .sticky {
-  position: sticky;
-  top: 0px;
-  padding-bottom: 10px;
-  z-index: 100;
+	  position: sticky;
+	  top: 0px;
+	  z-index: 100;
   }
   
   .jumbotron {
@@ -34,19 +31,31 @@
   }
   
   .mySlides {
-	display:none;
-	width:  900px;
-    height: 500px;
+	align:center;
+	width:  65vw;
+    height: 55vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
     object-fit: cover;
+  }
+  
+  .container {
+	padding-left: 5vw;
+	padding-right: 5vw;
   }
   
   h1 {
 	font-size: 60px;
   }
   
-  h2, h4, h5 { 
+  h2 {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight:bold;
+  }
+  
+  h4, h5 { 
     font-family: 'Montserrat', sans-serif;
-	border-bottom: 1px black;
+	text-decoration: underline;
 	font-weight:bold;
   }
   
@@ -58,8 +67,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <div id="jumbo" class="jumbotron text-center" style="margin-bottom:0">
-  <h1 style="font-family:'Dancing Script', cursive">Babymoon</h1>
-  <p style="font-family:'Montserrat', sans-serif">Derrick & Michelle's babymoon vacation ideas</p> 
+  <h1 style="font-family:'Dancing Script', Helvetica, Arial, cursive">Babymoon</h1>
+  <p style="font-family:'Montserrat', Helvetica, Arial sans-serif">Derrick & Michelle's babymoon vacation ideas</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-fixed-top sticky">
@@ -72,17 +81,17 @@
         <a class="nav-link" href="#section1">Colorado</a>
       </li>
 	  <li class="nav-item">
-	    <a class="nav-link w3-display-right" href="#jumbo">Top of Page</a>
+	    <a class="nav-link" href="#jumbo">Top of Page</a>
 	  </li>
     </ul>
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
+<div class="container">
   <div class="row">
-    <div id="section1" class="col-med" style="padding-top:50px">
-      <a href="https://www.stanleyhotel.com/" target="_blank"><h2>The Stanley Hotel</h2></a>
-      <h5>Estes Park, Colorado</h5>
+    <div class="col-med" style="padding-top:4vw" id="section1">
+		  <a href="https://www.stanleyhotel.com/" target="_blank"><h2>The Stanley Hotel</h2></a>
+		  <h5>Estes Park, Colorado</h5>
 	  <div class="w3-content w3-display-container">
 		<img class="mySlides" src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/thestanleyhotel-exterior_orig.jpg">
 		<img class="mySlides" src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/deluxe-king-mountain-view_orig.jpg">

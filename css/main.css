@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@font-face {
+    font-family: 'playfair';
+    src: url('fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .jumbotron {
-	background-color: #ffffff;
-	background: #ffffff;
-	font-family: "Playfair Display";
-	text-align:center;
-	padding: 0 !important;
-	margin-bottom: 0 !important;
-	margin-top: 23px;
+	padding-bottom: 35px !important;
+	padding-top: 25px !important;
+	background-color: transparent !important;
+}
+
+.jumbotron h1 { 
+	font-family: 'playfair', Helvetica, Arial, sans-serif;
+	font-size: 8vw;
+	text-align: center; 
+	background-color: transparent;
 }
 
 .sticky {
@@ -19,21 +28,17 @@
 }
 
 .navbar{ 
-	background:#FF69B4;
+	padding-top: 5px !important;
 	margin-bottom:0;
 }
 
 .nav-link , .navbar-brand{ 
-	color: #f4f4f4; 
+	color: #ffffff; 
 	cursor: pointer;
 }
 
 .nav-link{ 
 	margin-right: 1em !important;
-}
-
-.nav-link:hover, .navbar-brand:hover{ 
-	color: #FFC0CB; 
 }
 
 .navbar-collapse{ 
@@ -50,47 +55,4 @@
 
 .dropdown > .dropdown-toggle:active {
     pointer-events: none;
-}
-
-.masthead {
-  height: 100vh;
-  min-height: 200px;
-  background-image: url('%PUBLIC_URL%/images/header1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 6em 0;
-}
-
-.header{
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-}
-
-.imgbox {
-	display: grid;
-	height: 100%;
-}
-.center-fit {
-	max-width: 100%;
-	max-height: 100vh;
-	margin: auto;
-}
-
-.description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-}
-
-.description h1{
- color:#FF69B4 ;
-}
-
-.description p{
- color:#666;
- font-size: 20px;
- line-height: 1.5;
 }
