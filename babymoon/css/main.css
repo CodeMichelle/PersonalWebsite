@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'dancing';
+    src: url('fonts/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/dancingscript-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.jumbotron {
+	background-color: dodgerblue !important;
+	text-align: center;
+	color:white;
+	margin-bottom: 0 !important;
+}
+
+.jumbotron h1 { 
+	font-family: 'dancing', Helvetica, Arial, sans-serif;
+	font-weight: 1000;
+	font-size: 6vw;
+	background-color: transparent;
+}
+
+.jumbotron p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2vw;
+}
+
+.sticky {
+	position: sticky;
+	z-index: 100;
+}
+
+.navbar {
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 0 !important;
+}
+
+
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:bold;
+}
+
+h4, h5 { 
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+.footer h2 {
+	font-family: Helvetica, Arial, sans-serif;
+}
