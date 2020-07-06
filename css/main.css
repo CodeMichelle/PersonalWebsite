@@ -22,19 +22,35 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm';
+    src: url('fonts/ibmplexmono-regular-webfont.woff2') format('woff2'),
+         url('fonts/ibmplexmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .jumbotron {
-	padding-bottom: 50px;
-	padding-top: 50px;
 	background-color: transparent !important;
-	background-image: url(images/darkmonstera.jpg);
+	background-image: url(images/pinkpurplepainting.jpg);
 	background-size: cover;
 	color: white;
 	margin-top: 0 !important;
 }
 
 .jumbotron h1 { 
-	font-family: 'ralewaylight', Helvetica, Arial, sans-serif;
+	font-family: 'montserrat', Helvetica, Arial, sans-serif;
 	font-size: 9vw;
+	font-weight: 900;
 	text-align: center; 
 	background-color: transparent;
 }
@@ -46,13 +62,14 @@
   z-index: 100;
 }
 
-.navbar{ 
-	font-family: 'playfair', Helvetica, Arial, sans-serif;
+.navbar { 
 	padding-top: 5px !important;
 	margin-bottom:0 !important;
+	background-color: white !important;
 }
 
-.nav-link , .navbar-brand{ 
+.nav-link , .navbar-brand, .dropdown:hover>.dropdown-menu{ 
+	font-family: 'ibm', Helvetica, Arial, sans-serif;
 	color: #ffffff; 
 	cursor: pointer;
 }
@@ -75,4 +92,17 @@
 
 .dropdown > .dropdown-toggle:active {
     pointer-events: none;
+}
+
+.container { 
+	padding-top: 2vw;
+	padding-bottom: 4vw;
+}
+
+.container h2 { 
+	font-family: 'montserrat', Helvetica, Arial, sans-serif;
+}
+
+.container p, ul{
+	font-family: Helvetica, Arial, sans-serif;
 }
