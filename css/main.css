@@ -1,26 +1,3 @@
-@font-face {
-    font-family: 'playfair';
-    src: url('fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ralewaylight';
-    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('fonts/raleway-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('fonts/raleway-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'montserrat';
@@ -39,6 +16,15 @@
 
 }
 
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/RobotoMono-VariableFont_wght.woff2') format('woff2'),
+         url('fonts/RobotoMono-VariableFont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .jumbotron {
 	background-color: transparent !important;
 	background-image: url(images/pinkpurplepainting.jpg);
@@ -51,9 +37,9 @@
 }
 
 .jumbotron h1 { 
-	font-family: 'montserrat', Helvetica, Arial, sans-serif;
+	font-family: 'roboto', Helvetica, Arial, sans-serif;
 	font-size: 6vw;
-	font-weight: 900;
+	font-weight: 1000;
 	text-align: center; 
 	background-color: transparent;
 	text-transform: uppercase;
@@ -137,9 +123,14 @@ body, html {
 
 .parallax {
   background-image: url(images/pinkbluepaint.jpg);
-  height: 10vw;
+  height: 7vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align:center;
+  color:white;
+  font-weight: bold;
+  font-family: 'montserrat', Helvetica, Arial, sans-serif;
+  padding: 3vw;
 }
