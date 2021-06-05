@@ -37,7 +37,7 @@
 }
 
 .jumbotron h1 { 
-	font-family: 'roboto', Helvetica, Arial, sans-serif;
+	font-family: 'montserrat', Helvetica, Arial, sans-serif;
 	font-size: 6vw;
 	font-weight: 1000;
 	text-align: center; 
@@ -119,6 +119,10 @@
 
 body, html {
 	height: 100%;
+}
+
+body {
+	position: relative;
 }
 
 .parallax {
