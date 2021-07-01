@@ -26,19 +26,19 @@
 }
 
 .jumbotron {
-	background-color: transparent !important;
+	background-color: transparent;
 	background-image: url(images/pinkpurplepainting.jpg);
 	background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 	color: white;
-	margin-top: 0 !important;
+	margin-top: 0;
 }
 
 .jumbotron h1 { 
 	font-family: 'montserrat', Helvetica, Arial, sans-serif;
-	font-size: 6vw;
+	font-size: 4vw;
 	font-weight: 1000;
 	text-align: center; 
 	background-color: transparent;
@@ -53,14 +53,14 @@
 }
 
 .navbar { 
-	padding-top: 5px !important;
-	margin-bottom:0 !important;
-	background-color: white !important;
+	padding-top: 5px;
+	margin-bottom:0;
+	background-color: #fff;
 }
 
 .nav-link , .navbar-brand, .dropdown:hover>.dropdown-menu{ 
 	font-family: 'ibm', Helvetica, Arial, sans-serif;
-	color: #ffffff; 
+	color: #fff; 
 	cursor: pointer;
 }
 
@@ -87,6 +87,9 @@
 .container { 
 	padding-top: 2vw;
 	padding-bottom: 4vw;
+	display: flex;
+	align-items:center;
+	width: 90vw;
 }
 
 .container h2 { 
@@ -97,37 +100,15 @@
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.list-bullets {
-    list-style: none;
-}
-
-.list-bullets li {
-    display: flex;
-    align-items: center;
-}
-
-.list-bullets li::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #5784d7;
-    border: 2px solid #8fb3f5;
-    display: block;
-    margin-right: 1rem;
-}
-
-body, html {
-	height: 100%;
-}
-
 body {
-	position: relative;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
 }
 
 .parallax {
   background-image: url(images/pinkbluepaint.jpg);
-  height: 7vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,5 +117,12 @@ body {
   color:white;
   font-weight: bold;
   font-family: 'montserrat', Helvetica, Arial, sans-serif;
-  padding: 3vw;
+  padding: 1vw;
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
 }
