@@ -89,7 +89,7 @@
 	padding-bottom: 4vw;
 	display: flex;
 	align-items:center;
-	width: 90vw;
+	max-width: 60vw;
 }
 
 .container h2 { 
@@ -123,6 +123,7 @@ body {
 @media(max-width: 480px) {
     .container {
         width: 100vw;
+		height: 100vw;
     }
 
 }
